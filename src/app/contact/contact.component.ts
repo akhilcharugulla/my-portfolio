@@ -21,7 +21,7 @@ export class ContactComponent {
   };
 
   formSubmitted = false;
-
+  Email : string ="charugullaakhil@gmail.com"
   constructor(private http: HttpClient) {}
 
   onSubmit() {
