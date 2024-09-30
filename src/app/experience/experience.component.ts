@@ -1,18 +1,22 @@
 import { Component } from '@angular/core';
 import { NgFor,NgIf,NgClass } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @Component({
   selector: 'app-experience',
   standalone: true,
-  imports: [NgFor, NgIf, NgClass,],
+  imports: [NgFor, NgIf, NgClass],
   templateUrl: './experience.component.html',
   styleUrl: './experience.component.scss'
 })
 export class ExperienceComponent {
   selectedItem: any;
+  isMobile: boolean = false;
 
   ngOnInit(): void {
-    this.selectedItem  = this.experienceItems[0];
+    this.selectedItem = this.experienceItems[0];
+    this.checkIfMobile();
+    window.addEventListener('resize', () => this.checkIfMobile());
    }
 
   experienceItems = [
@@ -62,8 +66,19 @@ export class ExperienceComponent {
   ];
 
 
+  // toggleItem(item: any) {
+  //     this.selectedItem = item;
+  // }
+
   toggleItem(item: any) {
+    if (this.isMobile) {
+      this.selectedItem = this.selectedItem === item ? null : item;
+    } else {
       this.selectedItem = item;
+    }  
   }
 
+  checkIfMobile() {
+    this.isMobile = window.innerWidth <= 768;
+  }
 }
