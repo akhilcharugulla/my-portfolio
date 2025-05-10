@@ -34,6 +34,21 @@ export class ProjectsComponent {
         delay: 300
       },
       {
+        title: 'Paw Finder',
+        link:'https://akhilcharugulla.github.io/fetchrewards',
+        gitUrl: 'https://github.com/akhilcharugulla/fetchrewards',
+        images: ['assets/paw-finder/1-paw-finder-login.png',
+          'assets/paw-finder/2-welcome-screen.png',
+          'assets/paw-finder/3-filter.png',
+          'assets/paw-finder/5-search-sort.png',
+          'assets/paw-finder/6-favourite-item.png',
+          'assets/paw-finder/7-favourites-page.png',
+          'assets/paw-finder/8-match.png',
+
+        ],
+        delay: 300
+      },
+      {
         title: 'Todo Management Application',
         link:'https://www.youtube.com/watch?v=3XAwT8Ifueg',
         gitUrl: '',
@@ -82,13 +97,6 @@ export class ProjectsComponent {
           'assets/calculator/3-calculator-someactions.png',
           'assets/calculator/4-calculator-someactions-clearhistory.png'
         ],
-        delay: 300
-      },
-      {
-        title: 'Shopping Cart',
-        link:'https://github.com/akhilcharugulla/frontend-projects/tree/master/tic_tac_toe',
-        gitUrl: 'https://github.com/akhilcharugulla/frontend-projects/tree/master/tic_tac_toe',
-        images: ['assets/employee-management-system/5-employee-management-system-deleteemployee2.png'],
         delay: 300
       }
     ];

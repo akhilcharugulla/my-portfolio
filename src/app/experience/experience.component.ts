@@ -21,8 +21,20 @@ export class ExperienceComponent {
 
   experienceItems = [
     {
-      title: 'Software Engineer Intern at Copart',
-      date: 'Dallas, Texas | Jan 2024 – Present',
+      title: 'Sr Software Engineer - Comcast',
+      date: 'Philadelphia, Pennsylvania | Mar 2025 – Present',
+      link: 'https://www.xfinity.com/hub?cid=cust',
+      details:[
+        "Delivered fixes for 10+ critical defects through weekly releases, achieving 80% SLA compliance.",
+        "Implemented RESTful APIs with Kafka as a messaging backbone to sync inventory updates in real time. Inventory changes trigger Kafka events and broadcast to subscribed services, ensuring all user sessions displayed up-to-date listings instantly",
+        "Deployed the applications on AWS EC2, setting up CloudWatch for real-time monitoring and managing scheduled tasks with cron jobs to maintain optimal performance and reliability.",
+        "Engineered high-performance Spring Microservices and Batch applications, reducing data loading times by 50% through advanced techniques such as parallel processing and partitioning."
+        ],
+      delay: 200
+    },
+    {
+      title: 'Software Engineer - Copart',
+      date: 'Dallas, Texas | Jan 2024 – Feb 2025',
       link: 'https://www.copart.com/',
       details:[
         "Created 15+ responsive Angular UI components based on Figma designs using PrimeNG and SCSS, ensuring compatibility with AngularJS legacy systems and boosting user engagement by 20%.",
@@ -36,7 +48,7 @@ export class ExperienceComponent {
       delay: 200
     },
     {
-      title: 'Software Engineer at Oracle Cerner',
+      title: 'Software Engineer - Oracle Cerner',
       date: 'Bengaluru, India | May 2020 – Jan 2023',
       link:'https://go.oracle.com/LP=142384?src1=:ad:pas:go:dg:a_nas:l5:RC_GOOG240501P00011C00354:MainAd&gad_source=1&gclid=Cj0KCQjwzva1BhD3ARIsADQuPnWMiAg3NgZ6ys7_TyPjesEmSYfNxSebchOBN1qEClV4WwueXRwKaaEaAikWEALw_wcB',
 
@@ -53,7 +65,7 @@ export class ExperienceComponent {
       delay: 300
     },
     {
-      title: 'Software Engineer Intern <br>at Collins Aerospace',
+      title: 'Software Engineer Intern - Collins Aerospace',
       date: 'Hyderabad, India | December 2019 – May 2020',
       link:'https://www.collinsaerospace.com/',
       details: [
